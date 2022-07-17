@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fornitfornus.advicegenerator.advicegenerator.model.AdviceGeneratorDto;
 import com.fornitfornus.advicegenerator.advicegenerator.webclient.advice.dto.OpenAdviceDto;
-import com.fornitfornus.advicegenerator.advicegenerator.webclient.advice.dto.OpenAdviceSlipDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
@@ -17,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 public class AdviceClient {
 
     private static final String ADVICE_URL = "https://api.adviceslip.com/advice";
-    private RestTemplate restTemplate = new RestTemplate();
+    private final RestTemplate restTemplate = new RestTemplate();
 
     @Autowired
     Jackson2ObjectMapperBuilder jsonBuilder;
@@ -32,12 +31,12 @@ public class AdviceClient {
         OpenAdviceDto openAdviceDto = objectMapper.readValue(json, OpenAdviceDto.class);
 
         return AdviceGeneratorDto.builder()
-                .id(openAdviceDto.getSlip().get("id").asInt())
+                .id(OpenAdviceDto.getSlip().get("id").asInt())
                 .advice(openAdviceDto.getSlip().get("advice").asText())
                 .build();
     }
 
-    /* Zwracamy typ generyczny */
+    /* Return generic type */
     private <T> T callGetMethod(String url, Class<T> responseType) {
         return restTemplate.getForObject(url, responseType);
     }

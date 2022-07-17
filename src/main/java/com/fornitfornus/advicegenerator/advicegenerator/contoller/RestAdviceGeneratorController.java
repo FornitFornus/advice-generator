@@ -15,9 +15,6 @@ public class RestAdviceGeneratorController {
 
     @GetMapping(value = "/advice")
     public AdviceGeneratorDto getAdvice(Model model) throws JsonProcessingException {
-       /*     String advGen = String.valueOf(adviceGeneratorService.getAdvice());
-            model.addAttribute("id",advGen);
-        return "advice";*/
-        return adviceGeneratorService.getAdvice();
+       return adviceGeneratorService.getAdvice();
     }
 }

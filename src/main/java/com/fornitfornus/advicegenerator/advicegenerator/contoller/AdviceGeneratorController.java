@@ -16,7 +16,6 @@ public class AdviceGeneratorController {
 
     @GetMapping(value = "/adviceHtml")
     public String getAdviceHtml(Model model) throws JsonProcessingException {
-            //adviceGeneratorService.getAdvice();
             AdviceGeneratorDto adviceGeneratorDto = adviceGeneratorService.getAdvice();
             model.addAttribute("id", adviceGeneratorDto.getId());
             model.addAttribute("advice", adviceGeneratorDto.getAdvice());
