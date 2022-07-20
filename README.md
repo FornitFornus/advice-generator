@@ -3,11 +3,11 @@
 Read advice from endpoint
 
 
-### Run docker container:
-Require: java11
-Clone the advice-generator api.
-Build boot jar.
-Run the docker-compose.yml file outside the "advice-generator" directory.
+## Run docker container:
+Require: java11  
+Clone the advice-generator api.  
+Build boot jar.  
+Run the docker-compose.yml file outside the "advice-generator" directory.  
 
 docker-compose up
 
