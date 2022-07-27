@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:localhost="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,7 +9,7 @@
             rel="icon"
             type="image/png"
             sizes="32x32"
-            th:href="@{/images/favicon-32x32.png}"
+            th:href="@{/css/images/favicon-32x32.png}"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,15 +18,19 @@
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
             rel="stylesheet"
     />
-
+    <!--<script>
+        var id = "[[${id}]]";
+        var advice = "[[${advice}]]";
+    </script>-->
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <script type="text/javascript" th:src="@{/css/js/getApi.js}"></script>
     <title>Advice Generator</title>
 </head>
 <body>
 
 <div class="content">
-    <h1>Advice # <span th:text="${id}"></span></h1>
-    <p th:text="${advice}"></p>
+    <h1>Advice # <span id="id" th:text="${id}"></span></h1>
+    <p id="advice" th:text="${advice}"></p>
     <picture>
         <source
                 media="(max-width: 768px)"
@@ -41,7 +45,7 @@
 
     <footer>
         <div class="dice">
-            <a th:href="@{/adviceHtml}">
+            <a th:onclick="getApi(api_url);">
                    <img src="/css/images/icon-dice.svg" alt="Randomize sentences}" />
             </a>
         </div>
