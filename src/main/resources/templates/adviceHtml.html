@@ -45,7 +45,7 @@
 
     <footer>
         <div class="dice">
-            <a th:onclick="getApi(api_url);">
+            <a href="/adviceHtml" th:onclick="event.preventDefault(); getApi(api_url);">
                    <img src="/css/images/icon-dice.svg" alt="Randomize sentences}" />
             </a>
         </div>
