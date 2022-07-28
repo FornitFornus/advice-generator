@@ -11,17 +11,12 @@
             sizes="32x32"
             th:href="@{/css/images/favicon-32x32.png}"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
             rel="stylesheet"
     />
-    <!--<script>
-        var id = "[[${id}]]";
-        var advice = "[[${advice}]]";
-    </script>-->
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
     <script type="text/javascript" th:src="@{/css/js/getApi.js}"></script>
     <title>Advice Generator</title>
@@ -29,8 +24,8 @@
 <body>
 
 <div class="content">
-    <h1>Advice # <span id="id" th:text="${id}"></span></h1>
-    <p id="advice" th:text="${advice}"></p>
+    <h1>Advice # <span id="adviceId" th:text="${id}"></span></h1>
+    <p id="adviceText" th:text="${advice}"></p>
     <picture>
         <source
                 media="(max-width: 768px)"
@@ -45,7 +40,7 @@
 
     <footer>
         <div class="dice">
-            <a href="/adviceHtml" th:onclick="event.preventDefault(); getApi(api_url);">
+            <a href="/adviceHtml" th:onclick="event.preventDefault(); getApiData(api_url);">
                    <img src="/css/images/icon-dice.svg" alt="Randomize sentences}" />
             </a>
         </div>
