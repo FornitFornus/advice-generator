@@ -1,5 +1,11 @@
+const adviceLink = document.getElementById("adviceLink");
 // api url
 const api_url = "http://localhost:8080/advice";
+
+adviceLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    getApiData(api_url);
+});
 
 // Defining async function
 async function getApiData(url) {

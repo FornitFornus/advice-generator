@@ -17,8 +17,7 @@
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
             rel="stylesheet"
     />
-    <link rel="stylesheet" th:href="@{/css/style.css}"/>
-    <script type="text/javascript" th:src="@{/css/js/getApi.js}"></script>
+    <link rel="stylesheet" th:href="@{/static/css/style.css}"/>
     <title>Advice Generator</title>
 </head>
 <body>
@@ -29,22 +28,23 @@
     <picture>
         <source
                 media="(max-width: 768px)"
-                srcset="/css/images/pattern-divider-mobile.svg"
+                srcset="/static/images/pattern-divider-mobile.svg"
         />
         <source
                 media="(min-width: 768px)"
-                srcset="/css/images/pattern-divider-desktop.svg"
+                srcset="static/images/pattern-divider-desktop.svg"
         />
         <img src="/css/images/pattern-divider-mobile.svg" alt="Divider}" />
     </picture>
 
     <footer>
         <div class="dice">
-            <a href="/adviceHtml" th:onclick="event.preventDefault(); getApiData(api_url);">
-                   <img src="/css/images/icon-dice.svg" alt="Randomize sentences}" />
+            <a href="/adviceHtml" id="adviceLink">
+                   <img src="/static/images/icon-dice.svg" alt="Randomize sentences}" />
             </a>
         </div>
     </footer>
 </div>
+<script type="text/javascript" th:src="@{/static/js/getApi.js}"></script>
 </body>
 </html>
