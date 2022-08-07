@@ -1,6 +1,5 @@
 package com.fornitfornus.advicegenerator.advicegenerator.webclient.advice.dto;
 
-import lombok.extern.slf4j.Slf4j;
 
 
 public class OpenAdviceSlipDto {

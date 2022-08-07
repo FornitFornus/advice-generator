@@ -16,7 +16,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 public class AdviceGeneratorController {
 
     private final AdviceGeneratorService adviceGeneratorService;
-
+ 
     @GetMapping(value = "/adviceHtml")
     public String getAdviceHtml(Model model) throws JsonProcessingException {
         AdviceGeneratorDto adviceGeneratorDto = adviceGeneratorService.getAdvice();
