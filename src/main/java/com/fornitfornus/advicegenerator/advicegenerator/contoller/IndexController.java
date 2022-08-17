@@ -10,5 +10,10 @@ public class IndexController {
     public String index() {
         return "index";
     }
-    
+
+    @GetMapping(value = "/dice")
+    public String dice_test() {
+        return "dice_test";
+    }
+
 }

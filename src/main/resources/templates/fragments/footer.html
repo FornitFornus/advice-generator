@@ -1,3 +1,16 @@
-<footer>
-  <a href="/adviceHtml" id="adviceLink" target="_self" alt="Dice advice"></a>
+<footer layout:fragment="footer">
+  <a
+    th:href="@{/adviceHtml}"
+    id="adviceLink"
+    class="dice"
+    target="_self"
+    alt="Dice advice"
+  >
+    <div class="dice show-1"></div>
+    <div class="dice show-6"></div>
+    <div class="dice show-4"></div>
+    <div class="dice show-3"></div>
+    <div class="dice show-5"></div>
+    <div class="dice show-2"></div>
+  </a>
 </footer>

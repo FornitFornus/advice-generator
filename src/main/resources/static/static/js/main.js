@@ -1,26 +1,44 @@
-const adviceLink = document.getElementById("adviceLink");
-// api url
-const api_url = "http://localhost:8080/advice";
+const API_URL_ADVICE = "http://localhost:8080/advice";
 
-adviceLink.addEventListener("click", function (e) {
-  e.preventDefault();
-  getApiData(api_url);
-});
-
-// Defining async function
-async function getApiData(url) {
-  // Storing response
+const getApiData = async (url) => {
   const response = await fetch(url);
+  const data = await response.json();
 
-  // Storing data in form JSON
-  var data = await response.json();
-  showData(data);
-}
+  return data;
+};
 
-function showData(data) {
+const showAdvice = (data) => {
   const adviceId = data.id;
   const adviceText = data.advice;
 
   document.getElementById("adviceId").innerHTML = adviceId;
   document.getElementById("adviceText").innerHTML = adviceText;
-}
+};
+
+const handleClickAdviceLink = async (event) => {
+  event.preventDefault();
+  const elAdviceLink = document.getElementById("adviceLink");
+
+  if (elAdviceLink.classList.contains("dice-animating")) {
+    return;
+  }
+
+  elAdviceLink.classList.add("dice-animating");
+
+  const adviceData = await getApiData(API_URL_ADVICE);
+  showAdvice(adviceData);
+  elAdviceLink.classList.remove("dice-animating");
+};
+
+const initAdviceLink = () => {
+  const elAdviceLink = document.getElementById("adviceLink");
+  if (elAdviceLink) {
+    elAdviceLink.addEventListener("click", handleClickAdviceLink);
+  }
+};
+
+const bootstrapScripts = () => {
+  initAdviceLink();
+};
+
+document.addEventListener("DOMContentLoaded", bootstrapScripts, false);

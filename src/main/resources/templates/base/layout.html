@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE"></title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      th:href="@{/static/images/favicon-32x32.png}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/static/css/style.css}" />
+    <script
+      defer
+      type="text/javascript"
+      th:src="@{/static/js/main.js}"
+    ></script>
+  </head>
+  <body>
+    <!-- Content Section -->
+    <div layout:fragment="content" class="content">
+      <section layout:fragment="content">
+        <p>This is filled by the content template</p>
+      </section>
+      <div layout:fragment="divider"></div>
+
+      <!-- Footer -->
+      <div layout:fragment="footer"></div>
+    </div>
+  </body>
+</html>

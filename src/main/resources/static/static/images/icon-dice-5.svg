@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="2.34 -0.19 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="18.84" cy="7.31" r="1.502" id="gradient-0">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="18.84" cy="16.31" r="1.502" id="gradient-1">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="14.34" cy="11.81" r="1.502" id="gradient-2">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="9.84" cy="7.31" r="1.502" id="gradient-3">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="9.84" cy="16.31" r="1.502" id="gradient-4">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+  </defs>
+  <path d="M 21.986 0.318 L 6.694 0.318 C 4.583 0.321 2.873 2.034 2.87 4.149 L 2.87 19.471 C 2.873 21.586 4.583 23.3 6.694 23.302 L 21.986 23.302 C 24.097 23.3 25.807 21.586 25.81 19.471 L 25.81 4.149 C 25.807 2.034 24.097 0.321 21.986 0.318 Z" fill="#202733" style="stroke: rgb(3, 255, 3); paint-order: stroke;"/>
+  <path d="M 18.84 8.81 C 17.685 8.81 16.964 7.5600000000000005 17.541 6.5600000000000005 C 17.809 6.096 18.304 5.8100000000000005 18.84 5.8100000000000005 C 19.995 5.8100000000000005 20.716 7.06 20.139 8.06 C 19.871 8.524000000000001 19.376 8.81 18.84 8.81 Z" style="fill: url(#gradient-0);"/>
+  <path d="M 18.84 17.81 C 17.685 17.81 16.964 16.56 17.541 15.56 C 17.809 15.096 18.304 14.81 18.84 14.81 C 19.995 14.81 20.716 16.06 20.139 17.06 C 19.871 17.524 19.376 17.81 18.84 17.81 Z" style="fill: url(#gradient-1);"/>
+  <path d="M 14.34 13.31 C 13.185 13.31 12.464 12.06 13.041 11.06 C 13.309 10.596 13.804 10.31 14.34 10.31 C 15.495 10.31 16.216 11.56 15.639 12.56 C 15.371 13.024 14.876 13.31 14.34 13.31 Z" style="fill: url(#gradient-2);"/>
+  <path d="M 9.84 8.81 C 8.685 8.81 7.964 7.5600000000000005 8.541 6.5600000000000005 C 8.809 6.096 9.304 5.8100000000000005 9.84 5.8100000000000005 C 10.995 5.8100000000000005 11.716 7.06 11.139 8.06 C 10.871 8.524000000000001 10.376 8.81 9.84 8.81 Z" style="fill: url(#gradient-3);"/>
+  <path d="M 9.84 17.81 C 8.685 17.81 7.964 16.56 8.541 15.56 C 8.809 15.096 9.304 14.81 9.84 14.81 C 10.995 14.81 11.716 16.06 11.139 17.06 C 10.871 17.524 10.376 17.81 9.84 17.81 Z" style="fill: url(#gradient-4);"/>
+</svg>

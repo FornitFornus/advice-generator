@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="2.34 -0.19 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="9.77" cy="11.763" r="1.502" id="gradient-0">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="9.84" cy="16.31" r="1.502" id="gradient-1">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="9.77" cy="7.31" r="1.502" id="gradient-2">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="18.925" cy="11.81" r="1.502" id="gradient-3">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="18.84" cy="16.31" r="1.502" id="gradient-4">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="18.84" cy="7.31" r="1.502" id="gradient-5">
+      <stop offset="0" style="stop-color: rgba(0, 255, 25, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 153, 15, 1)"/>
+    </radialGradient>
+  </defs>
+  <path d="M 25.81 4.149 L 25.81 19.471 C 25.807 21.586 24.095 23.3 21.983 23.302 L 6.676 23.302 C 4.562 23.3 2.851 21.586 2.848 19.471 L 2.848 4.149 C 2.851 2.034 4.562 0.321 6.676 0.318 L 21.983 0.318 C 24.095 0.321 25.807 2.034 25.81 4.149 Z" style="fill-rule: evenodd; fill: rgb(32, 39, 51); stroke: rgb(3, 255, 3); paint-order: stroke;"/>
+  <path d="M 11.069 12.513 C 11.646 11.513 10.925 10.263 9.77 10.263 C 9.234 10.263 8.739 10.549 8.471 11.013 C 7.894 12.013 8.615 13.263 9.77 13.263 C 10.306 13.263 10.801 12.977 11.069 12.513 Z" style="fill-rule: evenodd; fill: url(#gradient-0);"/>
+  <path d="M 11.139 17.06 C 11.716 16.06 10.995 14.81 9.84 14.81 C 9.304 14.81 8.809 15.096 8.541 15.56 C 7.964 16.56 8.685 17.81 9.84 17.81 C 10.376 17.81 10.871 17.524 11.139 17.06 Z" style="fill-rule: evenodd; fill: url(#gradient-1);"/>
+  <path d="M 11.069 8.06 C 11.646 7.06 10.925 5.8100000000000005 9.77 5.8100000000000005 C 9.234 5.8100000000000005 8.739 6.096 8.471 6.5600000000000005 C 7.894 7.5600000000000005 8.615 8.81 9.77 8.81 C 10.306 8.81 10.801 8.524000000000001 11.069 8.06 Z" style="fill-rule: evenodd; fill: url(#gradient-2);"/>
+  <path d="M 20.224 12.56 C 20.801 11.56 20.08 10.31 18.925 10.31 C 18.389 10.31 17.894 10.596 17.626 11.06 C 17.049 12.06 17.77 13.31 18.925 13.31 C 19.461 13.31 19.956 13.024 20.224 12.56 Z" style="fill-rule: evenodd; fill: url(#gradient-3);"/>
+  <path d="M 20.139 17.06 C 20.716 16.06 19.995 14.81 18.84 14.81 C 18.304 14.81 17.809 15.096 17.541 15.56 C 16.964 16.56 17.685 17.81 18.84 17.81 C 19.376 17.81 19.871 17.524 20.139 17.06 Z" style="fill-rule: evenodd; fill: url(#gradient-4);"/>
+  <path d="M 20.139 8.06 C 20.716 7.06 19.995 5.8100000000000005 18.84 5.8100000000000005 C 18.304 5.8100000000000005 17.809 6.096 17.541 6.5600000000000005 C 16.964 7.5600000000000005 17.685 8.81 18.84 8.81 C 19.376 8.81 19.871 8.524000000000001 20.139 8.06 Z" style="fill-rule: evenodd; fill: url(#gradient-5);"/>
+</svg>

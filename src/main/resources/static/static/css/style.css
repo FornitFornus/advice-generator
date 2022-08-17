@@ -1,79 +1,129 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: hsl(217, 19%, 24%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	min-height: 100vh;
-	font-family: 'Manrope', sans-serif;
-	font-size: 28px;
-	padding: 1rem;
-	margin: 0;
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  padding: 1rem;
+  margin: 0;
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	padding: 20px;
-	background-color: hsl(216, 22%, 54%);
-	border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  background-color: hsl(216, 22%, 54%);
+  border-radius: 2rem;
 }
 
 h1 {
-	color: hsl(150, 100%, 66%);
-	font-size: 1rem;
-	text-align: center;
+  color: hsl(150, 100%, 66%);
+  font-size: 1rem;
+  text-align: center;
 }
 
 h1 > span {
-    color: hsl(150, 100%, 66%);
-    	font-size: 1rem;
+  color: hsl(150, 100%, 66%);
+  font-size: 1rem;
 }
 
 p {
-	color: white;
-	text-align: center;
+  color: white;
+  text-align: center;
 }
 
-#adviceLink {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: hsl(150, 100%, 66%);
-    border-radius: 60px;
-	border: none;
-	text-align: center;
-	min-width: 60px;
-	min-height: 60px;
-	top: 50px;
-	background-image: url("/static/images/icon-dice.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 60px;
+  border: none;
+  text-align: center;
+  min-width: 60px;
+  min-height: 60px;
+  top: 50px;
+  cursor: pointer;
+  perspective: 100px;
 }
 
-#adviceLink:active,
-#adviceLink:hover {
-	border: none;
-	box-shadow: 0px 0px 4px 4px hsl(150, 100%, 66%);
+footer:active,
+footer:hover {
+  border: none;
+  box-shadow: 0px 0px 4px 4px hsl(150, 100%, 66%);
 }
 
-.button {
-    background-color: hsl(150, 100%, 66%);
-    border: none;
+.dice {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-45deg) rotateY(30deg) scale3d(0.4, 0.4, 0.4);
+}
+
+.dice.show-1 {
+  background-image: url("/static/images/icon-dice-1.svg");
+  transform: translateZ(1em);
+}
+
+.dice.show-4 {
+  background-image: url("/static/images/icon-dice-4.svg");
+  transform: rotateY(90deg) translateZ(1em);
+}
+
+.dice.show-6 {
+  background-image: url("/static/images/icon-dice-6.svg");
+  transform: rotateY(-180deg) translateZ(1em);
+}
+
+.dice.show-3 {
+  background-image: url("/static/images/icon-dice-3.svg");
+  transform: rotateY(-90deg) translateZ(1em);
+}
+
+.dice.show-2 {
+  background-image: url("/static/images/icon-dice-2.svg");
+  transform: rotateX(-90deg) translateZ(1em);
+}
+
+.dice.show-5 {
+  background-image: url("/static/images/icon-dice-5.svg");
+  transform: rotateX(90deg) translateZ(1em);
+}
+
+.dice-animating {
+  animation-name: dice-anim;
+  animation-duration: 0.45s;
+}
+
+@keyframes dice-anim {
+  0% {
+    transform: rotateX(-45deg) rotateY(30deg) scale3d(0.4, 0.4, 0.4);
+  }
+
+  50% {
+    transform: rotateX(45deg) rotateY(-330deg) scale3d(0.4, 0.4, 0.4);
+  }
+
+  100% {
+    transform: rotateX(-45deg) rotateY(30deg) scale3d(0.4, 0.4, 0.4);
+  }
 }
 
 /* DESKTOP */
 
 @media (min-width: 768px) {
-	.content {
-		width: 500px;
-	}
+  .content {
+    width: 500px;
+  }
 }
