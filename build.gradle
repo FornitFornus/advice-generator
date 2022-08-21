@@ -13,12 +13,12 @@ repositories {
 }
 
 dependencies {
-  implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+  	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-  implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+  	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
-  implementation 'org.jetbrains:annotations:20.1.0'
-  compileOnly 'org.projectlombok:lombok'
+  	implementation 'org.jetbrains:annotations:23.0.0'
+  	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
