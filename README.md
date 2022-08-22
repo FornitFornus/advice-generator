@@ -6,10 +6,12 @@ Read advice from endpoint
 ## Run docker container:
 Require: java11  
 Clone the advice-generator api.  
-Build boot jar.  
-Run the docker-compose.yml file.  
 
-docker-compose up
+Create imge: 
+docker build . -t advice-generator
+
+Run image:
+docker run -p 8080:8080 advice-generator
 
 ### Rest endpoint:
 localhost:8080/advice
