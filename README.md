@@ -7,7 +7,7 @@ Read advice from endpoint
 Require: java11  
 Clone the advice-generator api.  
 
-### Create imge: 
+### Create image: 
  docker build . -t advice-generator
 
 ### Run image:
