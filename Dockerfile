@@ -9,6 +9,6 @@ EXPOSE 8080
 
 RUN mkdir /advice-generator
 
-COPY --from=build /home/gradle/src/build/libs/*.jar /advice-generator/advice-generator-0.0.1-SNAPSHOT.jar/
+COPY --from=build /home/gradle/src/build/libs/*.jar /advice-generator/
 
 ENTRYPOINT ["java", "-jar","/advice-generator/advice-generator-0.0.1-SNAPSHOT.jar"]
