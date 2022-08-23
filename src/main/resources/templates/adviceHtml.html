@@ -3,22 +3,32 @@
   lang="en"
   xmlns:th="http://www.thymeleaf.org"
   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  layout:decorate="/base/layout"
+  layout:decorate="~{base/layout}"
 >
   <head>
     <title>Advice Generator</title>
   </head>
   <body>
-    <div layout:fragment="content">
-      <div th:replace="/fragments/advice_content"></div>
-      <div layout:fragment="divider">
-        <div th:replace="/fragments/divider"></div>
-      </div>
-
-      <!-- Footer -->
-      <div layout:fragment="footer">
-        <div th:replace="/fragments/footer"></div>
-      </div>
+  <div layout:fragment="content">
+    <div th:replace="/fragments/advice_content"></div>
+    <picture xmlns:th="http://www.w3.org/1999/xhtml">
+      <source
+          media="(max-width: 768px)"
+          srcset="/static/images/pattern-divider-mobile.svg"
+      />
+      <source
+          media="(min-width: 768px)"
+          srcset="static/images/pattern-divider-desktop.svg"
+      />
+      <img th:src="@{/static/images/pattern-divider-mobile.svg}" alt="Divider" />
+    </picture>
+    <div layout:fragment="linkButton" class="linkButton">
+      <div th:replace="/fragments/linkButton"></div>
     </div>
+  </div>
+  <!-- Footer -->
+  <div class="footerContent">
+    <p>Tadeusz Hlubinski</p>
+  </div>
   </body>
 </html>

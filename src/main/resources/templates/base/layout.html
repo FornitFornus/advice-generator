@@ -8,7 +8,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE"></title>
     <link
       rel="icon"
       type="image/png"
@@ -27,15 +26,30 @@
       type="text/javascript"
       th:src="@{/static/js/main.js}"
     ></script>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE"></title>
   </head>
   <body>
     <!-- Content Section -->
     <div layout:fragment="content" class="content">
       <p>This is filled by the content template</p>
-      <div layout:fragment="divider"></div>
+      <picture xmlns:th="http://www.w3.org/1999/xhtml">
+        <source
+            media="(max-width: 768px)"
+            srcset="/static/images/pattern-divider-mobile.svg"
+        />
+        <source
+            media="(min-width: 768px)"
+            srcset="static/images/pattern-divider-desktop.svg"
+        />
+        <img th:src="@{/static/images/pattern-divider-mobile.svg}" alt="Divider" />
+      </picture>
 
-      <!-- Footer -->
-      <div layout:fragment="footer"></div>
+        <div class="linkButton" layout:fragment="linkButton"></div>
+
+    </div>
+    <!-- Footer -->
+    <div class="footerContent">
+      <p>Tadeusz Hlubinski</p>
     </div>
   </body>
 </html>
