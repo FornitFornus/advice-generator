@@ -10,7 +10,7 @@
   </head>
   <body>
     <div layout:fragment="content">
-      <div th:replace="/fragments/welcome_content"></div>
+      <div th:replace="./fragments/welcome_content"></div>
       <picture xmlns:th="http://www.w3.org/1999/xhtml">
         <source
             media="(max-width: 768px)"
@@ -23,7 +23,7 @@
         <img th:src="@{/static/images/pattern-divider-mobile.svg}" alt="Divider" />
       </picture>
       <div layout:fragment="linkButton" class="linkButton">
-        <div th:replace="/fragments/linkAdvice"></div>
+        <div th:replace="./fragments/linkAdvice"></div>
       </div>
     </div>
     <!-- Footer -->
