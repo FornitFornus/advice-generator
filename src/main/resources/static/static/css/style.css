@@ -57,6 +57,14 @@ p {
   perspective: 100px;
 }
 
+.linkButton a {
+  text-decoration: none;
+}
+.linkButton .spanView {
+  font-size: 1rem;
+  text-align: center;
+}
+
 .linkButton:active,
 .linkButton:hover {
   border: none;
@@ -123,7 +131,7 @@ p {
 .footerContent {
   margin-top: 120px;
   color: hsl(216, 22%, 54%);
-  font-size: 0.65rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 
